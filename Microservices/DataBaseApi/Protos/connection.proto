@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "DataBaseApi";
+
+import "google/api/annotations.proto";
+
+package connection;
+
+service ConnectionProto {
+  rpc GetState (GetStateRequest) returns (GetStateResponse) {
+	option (google.api.http) = {
+		get: "/connection"
+	};
+  }
+}
+
+message GetStateRequest{ }
+
+message GetStateResponse{
+  bool Success = 1; 
+}

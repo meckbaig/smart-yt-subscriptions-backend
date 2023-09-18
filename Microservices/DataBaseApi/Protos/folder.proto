@@ -1,0 +1,64 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "DataBaseApi";
+
+import "google/api/annotations.proto";
+
+package folder;
+
+service FolderProto {
+  rpc GetFolder (GetFolderRequest) returns (GetFolderResponse);
+  rpc CreateFolder (CreateFolderRequest) returns (CreateFolderResponse);
+  rpc UpdateFolder (UpdateFolderRequest) returns (UpdateFolderResponse){
+	option (google.api.http) = {
+		get: "/updateFolder"
+	};
+  };
+  rpc DeleteFolder (DeleteFolderRequest) returns (DeleteFolderResponse);
+  rpc GetPublicFolders (GetPublicFoldersRequest) returns (GetPublicFoldersResponse);
+}
+
+message GetFolderRequest{
+  string Id = 1;
+  string UserId = 2;
+  bool Edit = 3;
+}
+
+message GetFolderResponse{
+  string JsonString = 1;
+}
+
+message CreateFolderRequest{
+  string UserId = 1;
+  string Name = 2;
+}
+
+message CreateFolderResponse{
+  string JsonString = 1;
+}
+
+message UpdateFolderRequest{
+  string JsonString = 1;
+}
+
+message UpdateFolderResponse{
+  string JsonString = 1;
+}
+
+message DeleteFolderRequest{
+  string Id = 1;
+  string UserId = 2;
+}
+
+message DeleteFolderResponse{
+  bool Success = 1;
+}
+
+message GetPublicFoldersRequest{
+  string UserId = 1;
+}
+
+message GetPublicFoldersResponse{
+  string JsonString = 1;
+}
+

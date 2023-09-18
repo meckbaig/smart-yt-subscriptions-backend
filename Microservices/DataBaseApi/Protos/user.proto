@@ -1,0 +1,43 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "DataBaseApi";
+
+package user;
+
+service UserProto {
+  rpc GetUserData (GetUserDataRequest) returns (GetUserDataResponse);
+  rpc UpdateSubChannels (UpdateSubChannelsRequest) returns (UpdateSubChannelsResponse);
+  rpc UpdateYoutubeId (UpdateYoutubeIdRequest) returns (UpdateYoutubeIdResponse);
+}
+
+message GetUserDataRequest{
+  string Email = 1;
+  string YoutubeId = 2;
+}
+
+message GetUserDataResponse{
+  string Id = 1;
+  string YoutubeId = 2; 
+  string Role = 3; 
+  string SubChannelsJson = 4;
+  string LastChannelsUpdate = 5;
+  string Folders = 6;
+}
+
+message UpdateSubChannelsRequest{
+  string Id = 1;
+  string SubChannelsJson = 2;
+}
+
+message UpdateSubChannelsResponse{
+  string LastChannelsUpdate = 1;
+}
+
+message UpdateYoutubeIdRequest{
+  string Id = 1;
+  string YoutubeId = 2;
+}
+
+message UpdateYoutubeIdResponse{
+  bool Success = 1;
+}

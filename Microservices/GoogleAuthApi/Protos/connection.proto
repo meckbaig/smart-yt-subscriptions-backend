@@ -1,0 +1,15 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "FoldersDataApi";
+
+package connection;
+
+service ConnectionProto {
+  rpc GetState (GetStateRequest) returns (GetStateResponse);
+}
+
+message GetStateRequest{ }
+
+message GetStateResponse{
+  bool Success = 1; 
+}
