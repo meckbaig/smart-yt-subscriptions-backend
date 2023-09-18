@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartYTSubscriptions", "SmartYTSubscriptions.csproj", "{55674006-5221-465E-9352-E79D4853270D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{ECF309BD-6392-4342-986F-9C7C4A27947D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoldersDataApi", "..\Microservices\GoogleAuthApi\FoldersDataApi.csproj", "{E25266E5-EE43-4CBA-BC13-7EC79605D64A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBaseApi", "..\Microservices\DataBaseApi\DataBaseApi.csproj", "{5E6FC620-6612-4D54-9450-E9EBF512955C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55674006-5221-465E-9352-E79D4853270D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55674006-5221-465E-9352-E79D4853270D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55674006-5221-465E-9352-E79D4853270D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55674006-5221-465E-9352-E79D4853270D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25266E5-EE43-4CBA-BC13-7EC79605D64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25266E5-EE43-4CBA-BC13-7EC79605D64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25266E5-EE43-4CBA-BC13-7EC79605D64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25266E5-EE43-4CBA-BC13-7EC79605D64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E6FC620-6612-4D54-9450-E9EBF512955C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E6FC620-6612-4D54-9450-E9EBF512955C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E6FC620-6612-4D54-9450-E9EBF512955C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E6FC620-6612-4D54-9450-E9EBF512955C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E25266E5-EE43-4CBA-BC13-7EC79605D64A} = {ECF309BD-6392-4342-986F-9C7C4A27947D}
+		{5E6FC620-6612-4D54-9450-E9EBF512955C} = {ECF309BD-6392-4342-986F-9C7C4A27947D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7DDF20C-8414-46C7-B114-BAFD382E479A}
+	EndGlobalSection
+EndGlobal

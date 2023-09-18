@@ -1,0 +1,76 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Auth/{action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ],
+      "UpstreamPathTemplate": "/Auth/{action}",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/Auth/{action}/{query}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ],
+      "UpstreamPathTemplate": "/Auth/{action}/{query}",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/User/{action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ],
+      "UpstreamPathTemplate": "/User/{action}",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/User/{action}/{query}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ],
+      "UpstreamPathTemplate": "/User/{action}/{query}",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/Folder/{action}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ],
+      "UpstreamPathTemplate": "/Folder/{action}",
+      "UpstreamHttpMethod": []
+    },
+    {
+      "DownstreamPathTemplate": "/Folder/{action}/{query}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5082
+        }
+      ],
+      "UpstreamPathTemplate": "/Folder/{action}/{query}",
+      "UpstreamHttpMethod": []
+    }
+  ]
+}

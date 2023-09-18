@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Apis.Auth.AspNetCore3" Version="1.61.0" />
+      <PackageReference Include="Google.Apis.Drive.v3" Version="1.61.0.3120" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.10" />
+      <PackageReference Include="Ocelot" Version="19.0.2" />
+    </ItemGroup>
+
+</Project>
