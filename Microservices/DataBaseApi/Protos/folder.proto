@@ -2,18 +2,12 @@
 
 option csharp_namespace = "DataBaseApi";
 
-import "google/api/annotations.proto";
-
 package folder;
 
 service FolderProto {
   rpc GetFolder (GetFolderRequest) returns (GetFolderResponse);
   rpc CreateFolder (CreateFolderRequest) returns (CreateFolderResponse);
-  rpc UpdateFolder (UpdateFolderRequest) returns (UpdateFolderResponse){
-	option (google.api.http) = {
-		get: "/updateFolder"
-	};
-  };
+  rpc UpdateFolder (UpdateFolderRequest) returns (UpdateFolderResponse);
   rpc DeleteFolder (DeleteFolderRequest) returns (DeleteFolderResponse);
   rpc GetPublicFolders (GetPublicFoldersRequest) returns (GetPublicFoldersResponse);
 }
